@@ -1,0 +1,35 @@
+name: node1
+type: nodejs:6.9
+
+dependencies:
+  nodejs:
+    pm2: "^2.4.0"
+relationships:
+    database: "mongodb:mongodb"
+    "node2": "node2:http"
+    "node3": "node3:http"
+    "node4": "node4:http"
+    "node5": "node5:http"
+    "node6": "node6:http"
+    "node7": "node7:http"
+    "node8": "node8:http"
+    "node9": "node9:http"
+web:
+  commands:
+    start: "PM2_HOME=$PLATFORM_APP_DIR/run pm2 start index.js --no-daemon"
+    #in this setup you will find your application stdout and stderr in /app/run/logs
+  locations:
+    "/public":
+      passthru: false
+      root: "public"
+      # Whether to allow files not matching a rule or not.
+      allow: true
+      rules:
+        '\.png$':
+          allow: true
+          expires: -1
+
+mounts:
+  "/run": "shared:files/run"
+
+disk: 128

@@ -1,0 +1,18 @@
+{
+  "name": "node_example",
+  "version": "1.0.0",
+  "description": "a Platform.sh example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "myp3bmdujgzqe@git.eu.platform.sh:myp3bmdujgzqe.git"
+  },
+  "author": "Ori Pekelman",
+  "license": "ISC",
+  "dependencies": {
+    "platformsh": "^0.0.1"
+  }
+}
