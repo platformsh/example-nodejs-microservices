@@ -1,33 +1,33 @@
-"http://{default}/":
+"https://{default}/":
   type: upstream
   upstream: "node1:http"
-"http://{default}/2":
+"https://{default}/2":
   type: upstream
   upstream: "node1:http"
-"http://{default}/2":
+"https://{default}/2":
   type: upstream
   upstream: "node3:http"
-"http://{default}/3":
+"https://{default}/3":
   type: upstream
   upstream: "node4:http"
-"http://{default}/4":
+"https://{default}/4":
   type: upstream
   upstream: "node4:http"
-"http://{default}/4":
+"https://{default}/4":
   type: upstream
   upstream: "node1:http"
-"http://{default}/5":
+"https://{default}/5":
   type: upstream
   upstream: "node5:http"
-"http://{default}/6":
+"https://{default}/6":
   type: upstream
   upstream: "node6:http"
-"http://{default}/7":
+"https://{default}/7":
   type: upstream
   upstream: "node7:http"
-"http://{default}/8":
+"https://{default}/8":
   type: upstream
   upstream: "node8:http"
-"http://{default}/9":
+"https://{default}/9":
   type: upstream
   upstream: "node9:http"
