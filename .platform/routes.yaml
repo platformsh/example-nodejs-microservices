@@ -3,19 +3,13 @@
   upstream: "node1:http"
 "https://{default}/2":
   type: upstream
-  upstream: "node1:http"
-"https://{default}/2":
-  type: upstream
-  upstream: "node3:http"
+  upstream: "node2:http"
 "https://{default}/3":
   type: upstream
-  upstream: "node4:http"
+  upstream: "node3:http"
 "https://{default}/4":
   type: upstream
   upstream: "node4:http"
-"https://{default}/4":
-  type: upstream
-  upstream: "node1:http"
 "https://{default}/5":
   type: upstream
   upstream: "node5:http"
